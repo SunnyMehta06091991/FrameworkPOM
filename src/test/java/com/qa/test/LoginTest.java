@@ -41,6 +41,16 @@ public LoginTest(){
 		homePage = loginPage.loginsuccessful(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
+	@Test(priority = 4)
+	public void test4(){
+		int i = 9/0;
+		System.out.println(i);
+	}
+	
+	@Test(priority = 5 , dependsOnMethods = "test4")
+	public void test5(){
+		System.out.println("Hi this is test 5");
+	}
 	@AfterMethod
 	public void teardown(){
 		driver.quit();

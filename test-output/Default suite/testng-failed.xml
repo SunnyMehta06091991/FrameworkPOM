@@ -5,10 +5,10 @@
     <classes>
       <class name="com.qa.test.LoginTest">
         <methods>
-          <include name="loginTest"/>
           <include name="intialisation"/>
           <include name="teardown"/>
-          <include name="crmLogoTest"/>
+          <include name="test4"/>
+          <include name="test5"/>
         </methods>
       </class> <!-- com.qa.test.LoginTest -->
     </classes>
